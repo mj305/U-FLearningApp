@@ -19,8 +19,8 @@ function App() {
      <Router>
        <PrimarySearchAppBar />
         <Switch>
-          <Route exact path="/" component={HomeComponent} />
-          <Route exact path="/bookscollection" component={MediaCard} />
+           <Route exact path="/" component={HomeComponent} />
+           <Route exact path="/bookscollection" component={MediaCard} />
            <Route exact path="/bookslider" component={BookSliderComponent} />
            <Route exact path="/about" component={AboutComponent} />
         </Switch>
