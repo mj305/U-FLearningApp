@@ -1,0 +1,13 @@
+
+.footer-component-container {
+  
+  margin-top: 19rem;
+  text-decoration: none;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.footer-component-wrapper {
+  background-color: #3F51B5;
+}
