@@ -9,7 +9,7 @@ import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
+import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 /* import MailIcon from '@material-ui/icons/Mail'; */
@@ -134,9 +134,9 @@ export default function PrimarySearchAppBar() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="secondary">
-          <MenuBookIcon />
+        <IconButton aria-label="" color="inherit">
+          <Badge badgeContent={0} color="secondary">
+            <MenuBookIcon />
           </Badge>
         </IconButton>
         <p>Messages</p>
@@ -173,7 +173,9 @@ export default function PrimarySearchAppBar() {
             color="inherit"
             aria-label="open drawer"
           >
-            <MenuIcon />
+            <Link to="/">
+              <HomeIcon />
+            </Link>
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
             Educational App
@@ -193,14 +195,18 @@ export default function PrimarySearchAppBar() {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <MenuBookIcon />
+            <IconButton aria-label="show 0 new mails" color="inherit">
+              <Badge badgeContent={0} color="secondary">
+                <Link to="/bookscollection">
+                  <MenuBookIcon />
+                </Link>
               </Badge>
             </IconButton>
             <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
-                <NotificationsIcon />
+              <Badge badgeContent={7} color="secondary">
+                <Link>
+                  <NotificationsIcon />
+                </Link>
               </Badge>
             </IconButton>
             <IconButton
@@ -211,7 +217,9 @@ export default function PrimarySearchAppBar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              <Link>
+                <AccountCircle />
+              </Link>
             </IconButton>
           </div>
           <div className={classes.sectionMobile}>
