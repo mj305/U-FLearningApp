@@ -1,239 +1,247 @@
-import React from 'react';
 
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import React from "react";
+import { Link } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import "./BooksCollectionComponent.css";
 
-import "./BooksCollectionComponent.css"
 
 const useStyles = makeStyles({
-    root: {
-        maxWidth: 345,
-    },
-    media: {
-        height: 140,
-    },
+  root: {
+    maxWidth: 345,
+  },
+  media: {
+    height: 140,
+  },
 });
 
 export default function MediaCard() {
-    const classes = useStyles();
-
-    return (
-       <>  
-        <div class="flex-container">
-
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                    className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"/>
-
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">Book 1</Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
-                        </Typography>
-                    </CardContent>
-
-                </CardActionArea>
-
-                <CardActions>
-                    <Button size="small" color="primary">Share</Button>
-                    <Button size="small" color="primary">Jump in and start reading!</Button>
-                </CardActions>
-            </Card>
+  const classes = useStyles();
 
 
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Book 2
-          </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
-          </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                        Share
-        </Button>
-                    <Button size="small" color="primary">
-                        Jump in and start reading!
-        </Button>
-                </CardActions>
-            </Card>
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Book 3
-          </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
-          </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                        Share
-        </Button>
-                    <Button size="small" color="primary">
-                        Jump in and start reading!
-        </Button>
-                </CardActions>
-            </Card>
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Book 4
-          </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
-          </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                        Share
-        </Button>
-                    <Button size="small" color="primary">
-                        Jump in and start reading!
-        </Button>
-                </CardActions>
-            </Card>
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Book 5
-          </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
-          </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                        Share
-        </Button>
-                    <Button size="small" color="primary">
-                        Jump in and start reading!
-        </Button>
-                </CardActions>
-            </Card>
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Book 6
-          </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
-          </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                        Share
-        </Button>
-                    <Button size="small" color="primary">
-                        Jump in and start reading!
-        </Button>
-                </CardActions>
-            </Card>
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Book 7
-          </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
-          </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                        Share
-        </Button>
-                    <Button size="small" color="primary">
-                        Jump in and start reading!
-        </Button>
-                </CardActions>
-            </Card>
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Book 8
-          </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
-          </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                        Share
-        </Button>
-                    <Button size="small" color="primary">
-                        Jump in and start reading!
-        </Button>
-                </CardActions>
-            </Card>
-        </div>
-     </>  
-    );
+  return (
+    <div class="flex-container">
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Book 1
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+
+
+          <Button size="small" color="primary">
+            <Link to="/bookslider">Jump in and start reading!</Link>
+          </Button>
+        </CardActions>
+      </Card>
+
+
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Book 2
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          <Button size="small" color="primary">
+            Jump in and start reading!
+          </Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Book 3
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          <Button size="small" color="primary">
+            Jump in and start reading!
+          </Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Book 4
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          <Button size="small" color="primary">
+            Jump in and start reading!
+          </Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Book 5
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          <Button size="small" color="primary">
+            Jump in and start reading!
+          </Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Book 6
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          <Button size="small" color="primary">
+            Jump in and start reading!
+          </Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Book 7
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          <Button size="small" color="primary">
+            Jump in and start reading!
+          </Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Book 8
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          <Button size="small" color="primary">
+            Jump in and start reading!
+          </Button>
+        </CardActions>
+      </Card>
+    </div>
+  );
+
 }
