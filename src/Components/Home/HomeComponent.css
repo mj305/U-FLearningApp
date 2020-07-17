@@ -1,0 +1,9 @@
+.home-page-container {
+  background: url('./assets/kidsapp.jpg');
+  width: 100vw;
+  height: 130vh;
+  margin-top: -17px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+ }

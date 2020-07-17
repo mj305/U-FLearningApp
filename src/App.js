@@ -7,7 +7,6 @@ import {
 
 import AboutComponent from './Components/About/AboutComponent';
 import BookSliderComponent from './Components/BookSlider/BookSliderComponent'
-/* import FooterComponent from './Components/Footer/FooterComponent'; */
 import HomeComponent from './Components/Home/HomeComponent';
 import MediaCard from './Components/BooksCollection/BooksCollectionComponent';
 import PrimarySearchAppBar from './Components/NavBar/NavBarComponent';
@@ -24,10 +23,8 @@ function App() {
            <Route exact path="/bookscollection" component={MediaCard} />
            <Route exact path="/bookslider" component={BookSliderComponent} />
            <Route exact path="/about" component={AboutComponent} />
-        </Switch>
-        
+        </Switch>   
      </Router>
-     {/* <FooterComponent /> */}
     </div>
   );
 }
