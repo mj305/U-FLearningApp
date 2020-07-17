@@ -172,9 +172,10 @@ export default function PrimarySearchAppBar() {
             color="inherit"
             aria-label="open drawer"
           >
-            <Link to="/">
+            <Link className="home-icon-wrapper" to="/">
               <HomeIcon />
             </Link>
+
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
             Educational App
