@@ -6,6 +6,7 @@ import family from "../Images/family.jpg";
 const text1 = () => {
   return (
     <>
+      <h2 >Money Basics</h2>
       <div className="text">
         We use money to buy what we need or want. Some of those include housing,
         food, clothes, fun, and many other things.

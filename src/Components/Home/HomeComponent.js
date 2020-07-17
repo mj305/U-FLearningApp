@@ -10,9 +10,10 @@ const HomeComponent = () => {
     return(
       <>
         <div className="home-page-container">
-          <p>Elevate</p>
+          <div className="header-page-text" >Elevate!</div>
+          <FooterComponent />
         </div>
-      <FooterComponent />
+      
       </>
     )
 };
