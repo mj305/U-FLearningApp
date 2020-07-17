@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
@@ -10,6 +11,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import "./BooksCollectionComponent.css";
 
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -21,6 +23,7 @@ const useStyles = makeStyles({
 
 export default function MediaCard() {
   const classes = useStyles();
+
 
   return (
     <div class="flex-container">
@@ -48,11 +51,13 @@ export default function MediaCard() {
             Share
           </Button>
 
+
           <Button size="small" color="primary">
             <Link to="/bookslider">Jump in and start reading!</Link>
           </Button>
         </CardActions>
       </Card>
+
 
       <Card className={classes.root}>
         <CardActionArea>
@@ -238,4 +243,5 @@ export default function MediaCard() {
       </Card>
     </div>
   );
+
 }

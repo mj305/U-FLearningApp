@@ -3,16 +3,10 @@ import React from 'react';
 const FooterComponent = () => {
 
   return (
-    <div className="footer-container"  >
-          <div>
-          <a href='http://marvel.com' target='blank' >
-          <p className="all-characters-page-footer-data-text" > Data provided by Marvel. © 2020 Marvel </p>
-          </a>
-          </div>
-
-            <div>
-              <a href='https://mariabeckles.herokuapp.com/'  target='blank' >
-              <p className="all-characters-page-footer-data-text" > Created By Maria Beckles </p>
+    <div className="footer-component-container"  >
+            <div className="footer-component-wrapper" >
+              <a href='https://github.com/mj305/UniteNFightHackathon'  target='blank' >
+              <p>Learning App © 2020 Created By Wyncoders </p>
               </a>
             </div>
           </div> 
