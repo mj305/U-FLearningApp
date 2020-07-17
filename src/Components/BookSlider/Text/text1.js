@@ -1,7 +1,7 @@
 import React from "react";
 import "../BookSliderComponent.css";
 
-import imga from "../Images/fitness-girl.jpg";
+import family from "../Images/family.jpg";
 
 const text1 = () => {
   return (
@@ -15,7 +15,7 @@ const text1 = () => {
           money.
         </div>
       </div>
-      <img src={imga} alt="somthing" className="pic" />
+      <img src={family} alt="somthing" className="pic" />
     </>
   );
 };
