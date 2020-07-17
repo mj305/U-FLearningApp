@@ -1,7 +1,7 @@
 import React from "react";
 import "../BookSliderComponent.css";
 
-import imga from "../Images/fitness-girl.jpg";
+import imga from "../Images/black-family.jpg";
 
 const text3 = () => {
   return (
