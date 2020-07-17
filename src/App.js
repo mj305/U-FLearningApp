@@ -7,7 +7,7 @@ import {
 
 import AboutComponent from './Components/About/AboutComponent';
 import BookSliderComponent from './Components/BookSlider/BookSliderComponent'
-import FooterComponent from './Components/Footer/FooterComponent';
+/* import FooterComponent from './Components/Footer/FooterComponent'; */
 import HomeComponent from './Components/Home/HomeComponent';
 import MediaCard from './Components/BooksCollection/BooksCollectionComponent';
 import PrimarySearchAppBar from './Components/NavBar/NavBarComponent';
@@ -25,8 +25,9 @@ function App() {
            <Route exact path="/bookslider" component={BookSliderComponent} />
            <Route exact path="/about" component={AboutComponent} />
         </Switch>
-       <FooterComponent /> 
+        
      </Router>
+     {/* <FooterComponent /> */}
     </div>
   );
 }

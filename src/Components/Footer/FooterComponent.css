@@ -1,6 +1,8 @@
 
 .footer-component-container {
-  
+  background-color: #3F51B5;
+  color: white;
+  text-decoration: none;
   margin-top: 19rem;
   text-decoration: none;
   width: 100%;
@@ -8,6 +10,10 @@
   bottom: 0px;
 }
 
-.footer-component-wrapper {
-  background-color: #3F51B5;
+p {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
 }
