@@ -1,5 +1,7 @@
 import React from 'react';
 
+import FooterComponent from '../Footer/FooterComponent'
+
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -234,6 +236,7 @@ export default function MediaCard() {
                 </CardActions>
             </Card>
         </div>
+        <FooterComponent />
      </>  
     );
 }

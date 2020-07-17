@@ -1,7 +1,12 @@
 import React, { useState, useCallback } from "react";
-import { useTransition, animated } from "react-spring";
-import "./BookSliderComponent.css";
+
 import Text from "./Text";
+
+import { useTransition, animated } from "react-spring";
+
+import "./BookSliderComponent.css";
+
+
 const pages = [
   ({ style }) => (
     <animated.div style={{ ...style, background: "lightpink" }}>
