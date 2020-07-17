@@ -16,6 +16,10 @@ import science from "../Images/science.jpg"
 import language from "../Images/language.jpg"
 import math from "../Images/math.jpg"
 import social from "../Images/social.jpg"
+import business from "../Images/business.jpg"
+import growth from "../Images/growth.jpg"
+
+
 
 
 
@@ -52,9 +56,8 @@ export default function MediaCard() {
                             Money Basics
             </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over
-                            6,000 species, ranging across all continents except Antarctica
-            </Typography>
+
+                        </Typography>
                     </CardContent>
                 </CardActionArea>
 
@@ -83,9 +86,8 @@ export default function MediaCard() {
                             Reading Level 2
             </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over
-                            6,000 species, ranging across all continents except Antarctica
-            </Typography>
+
+                        </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
@@ -109,9 +111,8 @@ export default function MediaCard() {
                             Science
             </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over
-                            6,000 species, ranging across all continents except Antarctica
-            </Typography>
+
+                        </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
@@ -135,9 +136,8 @@ export default function MediaCard() {
                             Language Arts
             </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over
-                            6,000 species, ranging across all continents except Antarctica
-            </Typography>
+
+                        </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
@@ -161,9 +161,8 @@ export default function MediaCard() {
                             Math
             </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over
-                            6,000 species, ranging across all continents except Antarctica
-            </Typography>
+
+                        </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
@@ -204,7 +203,7 @@ export default function MediaCard() {
                 <CardActionArea>
                     <CardMedia
                         className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
+                        image={growth}
                         title="Contemplative Reptile"
                     />
                     <CardContent>
@@ -229,17 +228,16 @@ export default function MediaCard() {
                 <CardActionArea>
                     <CardMedia
                         className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
+                        image={business}
                         title="Contemplative Reptile"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Book 8
+                            Entreprenuership
             </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over
-                            6,000 species, ranging across all continents except Antarctica
-            </Typography>
+
+                        </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
